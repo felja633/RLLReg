@@ -2,7 +2,7 @@
 
 This repository contains a Pytorch implementation of the point set registration method RLLReg. Details about the method can be found in the 3DV 2020 paper "<em>Registration Loss Learning for Deep Probabilistic Point Set Registration</em>".
 
-ArXiv: [[paper]](missing-link)
+ArXiv: [[paper]](https://arxiv.org/abs/2011.02229)
 
 ![](RLLRegFig.png)
 
