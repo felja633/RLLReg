@@ -2,7 +2,7 @@
 
 This repository contains a Pytorch implementation of the point set registration method RLLReg. Details about the method can be found in the 3DV 2020 paper "<em>Registration Loss Learning for Deep Probabilistic Point Set Registration</em>".
 
-ArXiv: [[paper]](missing-link)
+ArXiv: [[paper]](https://arxiv.org/abs/2011.02229)
 
 ![](RLLRegFig.png)
 
@@ -22,12 +22,12 @@ If you find the code useful, please cite using
 ```shell script
 conda create -n rllreg python=3.7
 conda activate rllreg
-conda install -y numpy pathlib mkl-include
+conda install -y numpy pathlib mkl-include pyyaml
 conda install -y pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.2 -c pytorch
 conda install -y -c conda-forge cudatoolkit-dev
-conda install -y -c open3d-admin open3d
-pip install easydict visdom pyyaml
+pip install easydict visdom
 pip install git+https://github.com/jonbarron/robust_loss_pytorch
+conda install -y -c open3d-admin open3d
 
 ```
 * Install MinkowskiEngine with GPU support. Follow instructions for conda environment on https://github.com/NVIDIA/MinkowskiEngine
