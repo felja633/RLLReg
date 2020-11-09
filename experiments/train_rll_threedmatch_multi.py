@@ -95,7 +95,8 @@ def configure_val_datasets():
 
 
 def configure_trainer(model):
-    optimizer = optim.Adam([{'params': model.feature_extractor.parameters(), 'lr': 1e-4}], lr=1e-4)
+    # paper versions are trained with adam, but better performance is acheived using AdamW
+    optimizer = optim.AdamW([{'params': model.feature_extractor.parameters(), 'lr': 1e-4}], lr=1e-4)
 
     base_vs_weight = 3*(40.0-24.0)/2.0
     Vs_iter = [base_vs_weight/(model.params.num_iters-i) for i in range(model.params.num_iters-1)]

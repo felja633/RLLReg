@@ -89,7 +89,8 @@ def configure_val_datasets():
     return kitti.KittiDataset(path_kitti, kitti_params, downsampler, processor, training=True, data_type='list')
 
 def configure_trainer(model):
-    optimizer = optim.Adam([{'params': model.feature_extractor.parameters(), 'lr': 1e-4}], lr=1e-4)
+    # paper versions are trained with adam, but better performance is acheived using AdamW
+    optimizer = optim.AdamW([{'params': model.feature_extractor.parameters(), 'lr': 1e-4}], lr=1e-4)
 
     base_vs_weight = (40.0 - 24.0)/4.0
     Vs_iter = [base_vs_weight / (model.params.num_iters - i) for i in range(model.params.num_iters - 1)]
