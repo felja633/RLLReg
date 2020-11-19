@@ -113,3 +113,5 @@ email: felix.jaremo-lawin@liu.se
 * The registration code was built upon the code for DARE in https://github.com/felja633/DARE
 
 * The original implementation for JRMPC can be found in https://team.inria.fr/perception/research/jrmpc/
+
+Special thanks go to Shivangi Srivastava who helped with initial implementations of the work!
