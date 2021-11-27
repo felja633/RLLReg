@@ -98,7 +98,7 @@ Under external/DeepGLobalRegistration the official implementation of [DGR](https
 ## Contact
 Felix Järemo Lawin
 
-email: felix.jaremo-lawin@liu.se
+email: felix.lawin@gmail.com
 
 ## Acknowledgements
 
